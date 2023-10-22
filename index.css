@@ -1,0 +1,337 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+    font-weight: 300;
+}
+html,body{
+    height:100%;
+    width: 100%;
+    color:white;
+    /* background-color: black; */
+}
+
+#header{
+    height: 10%;
+    width: 100%;
+    background-color:black;
+}
+
+#top-left{
+    gap:5px;
+    display: flex;
+   
+}
+#top-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#ftr{
+    height: 30%;
+    width: 100%;
+    background-image:linear-gradient(to right, rgb(83, 80, 80),rgb(83, 83, 83),rgb(90, 89, 89),rgb(57, 56, 56)) ;
+  
+}
+#ftr-info h4{
+    margin-top: 2%;
+    color:rgb(108, 204, 248)
+}
+#icons i{
+
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+}
+#ftr-info p{
+    margin-top: 2%;
+}
+
+.left{
+    font-size: 14px;
+    margin-left: 10px;;
+}
+.container{
+    padding: 10px 10%; 
+    
+}
+#buttons{
+    display: flex;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:80px;
+    /* background-image:linear-gradient(to right, rgb(105, 103, 103),rgb(107, 106, 106),rgb(90, 89, 89),rgb(57, 56, 56)) ; */
+
+}
+nav #login{
+    display: flex;
+   margin-right:3%;
+}
+#login .btn:hover{
+    border: 1px solid rgb(248, 181, 37);
+    background-color:rgb(248, 181, 37) ;
+
+}
+
+#bg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,black,rgb(7, 6, 6),rgba(37, 3, 59, 0.747));
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    
+
+}
+.header-text{
+    margin-top: 6%;
+    margin-left: 10%;
+    font-size: 24px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap:5%;
+}
+    
+.header-text #right-div{
+    width:40%;
+    font-size: 24px;
+    height: 100%;
+
+}
+.header-text #right-div h3{
+    font-size: 20px;
+}
+#right-div p{
+    margin-top: 5%;
+}
+#right-div #buttons{
+    margin-top: 5%;
+}
+.header-text #left-div{
+    width:60%;
+    position: absolute;
+    height: 100%;
+    margin-left: 58%;
+    margin-bottom: 5%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    animation-name: move-up;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   .header-text #left-div img{
+    height: 100%;
+    width: 50%;
+   }
+.header-text #left{
+    width: 30%;
+    height: 100%;
+}
+.header-text #right img{
+    height: 80%;
+    width: 80%;
+}
+
+
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size:18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background: #dd58f8;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition:0.5s;
+
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.header-text h1 span{
+    color:rgb(233, 222, 13);
+}
+#icons i{
+    padding-left: 5%;
+    font-size: 30px;
+    color:rgb(5, 5, 4)
+}
+
+.btn{
+    display: block;
+    margin-top: 6%;
+    margin-left: 10px;
+    /* margin: 50px auto; */
+    width: fit-content;
+    border: 1px solid #d073e3;
+    padding: 12px 20px;
+    border-radius: 90px;
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    background:#b923ff;
+}
+
+nav i{
+    color: white;
+}
+
+#services{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding:10%;
+}
+
+#icons{
+    padding:5%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:5%;
+}
+#icons i{
+    margin-left: 5%;
+    height: 30px;
+    width: 30px;
+    display:flex;
+    justify-content: space-between;
+}
+#abt{
+    height: 100%;
+    width: 100%;
+    gap:7%;
+    padding: 5%;
+    display:flex;
+    justify-content: space-between;
+    /* margin-top: 15%; */
+    background-image: linear-gradient(to top,rgb(8, 1, 8),rgb(41, 3, 46));
+   
+    /* margin-left: 5%; */
+}
+#abt-img{
+    margin-left: 2%;
+    height: 100%;
+    width: 60%;
+    background-image: url("https://images.unsplash.com/photo-1583382525292-b14a53cb850b?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGhpbmt8ZW58MHx8MHx8fDA%3D");
+   border-radius: 10%;
+   transition: width 2s;
+   }
+  
+   #abt-info{
+    padding:3%;
+    height: 80%;
+    width: 60%;
+   }
+   #abt-info p{
+    margin-top: 5%;
+   }
+   #svc{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgb(60, 3, 71),rgb(27, 26, 26),rgb(7, 7, 7));
+   }
+   #svc #svc-info{
+    margin-bottom: 2%;
+    padding: 5%;
+   }
+
+   #svc-grids{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding:0px;
+    white-space: nowrap;
+    overflow-x: auto;
+   }
+   /* to hide the scrollbar */
+   #svc-grids::-webkit-scrollbar{
+    display:none;
+   }
+ #svc-grids .elem{
+  margin-top: 3%;
+  height: 400px;
+  width: 290px;
+  background-color: #fff;
+  position:relative;
+  box-shadow: 0 5px 10px rgb(158, 155, 155);
+  display: inline-block;
+  margin-right: 35px;
+
+   }
+   .elem h4{
+     position: absolute;
+     bottom: 0px;
+     right:0px;
+     padding:15px 35px;
+     font-weight:700;
+     font-size: 16px;
+     color:black;
+     background-color: rgb(255, 251, 18);
+   }
+.elem img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#btm1{
+    font-size: 15px;
+    height: 5%;
+    width: 100%;
+    margin-bottom: 2%;
+    background-color: black;
+    padding:1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright{
+    margin-left: 14%;
+}
+
+/* -------------Animations---------- */
+
+@keyframes move-up {
+    from{
+        margin-bottom: 5%;
+
+    }
+    to{
+        margin-bottom: 0;
+    }
+}
+
+
+
+   
+
